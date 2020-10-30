@@ -1,0 +1,70 @@
+body{
+	position: relative;
+}
+header {
+}
+header .top {
+	padding-top: 8%;
+	position: relative;
+}
+@media only screen and (max-width: 768px){
+	header .top {
+	padding-top: 15%;
+}
+}
+header .top .background{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+header .top form{
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	display: flex;
+	outline: 1px solid orange;
+	border: 1px solid orange;
+}
+@media only screen and (max-width: 576px){
+	header .top form{
+		opacity: 0.2;
+	}
+	header .top form:hover{
+		opacity: 1;
+	}
+}
+header .top form input[type="search"]{
+	padding: 0.2em 0.5em;
+	border: none;
+	outline: none;
+	
+	margin: 0;
+}
+header .top form label{
+	background: white;
+	margin: 0;
+	padding: 0.2em 0.5em;
+	color: orange;
+}
+
+nav {
+	border-top: 1px solid orange;
+	border-bottom:1px solid gray;
+}
+ nav a{
+	text-transform: uppercase;
+}
+footer{
+	margin-top: 2.5em;
+	color: white;
+
+}
+footer >div{
+	background-color: #007c7c; 
+}
+footer> div:last-child{
+	background-color: #0f5658;
+}

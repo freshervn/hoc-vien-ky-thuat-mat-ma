@@ -1,0 +1,167 @@
+main {
+	box-shadow: 1px 1px 1px 1px #d5d5d5,-1px 1px 1px 1px #d5d5d5,1px -1px 1px 1px #d5d5d5,-1px -1px 1px 1px #d5d5d5;
+	margin-top: 1em;
+	padding-top: 1em;
+}
+.activitys h4 {
+	text-transform: uppercase;
+	color: red;
+}
+.activitys .owl-carousel.activity figure{
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	padding-top: 60%; 
+}
+@media only screen and (max-width: 768px){
+	.activitys .owl-carousel.activity figure{
+		margin:0;}
+	}
+	.activitys .owl-carousel.activity img{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		padding: 0.5em;
+	}
+	.activitys .owl-carousel.activity .owl-dots .owl-dot{
+		outline: none;
+	}
+	.activitys .owl-carousel.activity .owl-dots .owl-dot span{
+		width: 8px;
+		height: 8px;
+	}
+	.activitys .owl-carousel.activity .owl-dots .owl-dot.active span{
+		background: #bd2130;
+	} 
+	.activitys .owl-carousel.activity .owl-nav{
+		display: flex;
+		position: absolute;
+		top: 35%;
+		width: 100%;
+		justify-content: 
+		space-between;
+		transition: 0.5s ease-in-out;
+		opacity: 0;
+	}
+	.activitys .owl-carousel.activity:hover .owl-nav{
+		opacity: 1;
+	}
+	.activitys .owl-carousel.activity .owl-nav button {
+		background: white;
+		width: 50px;
+		height: 50px;
+		border-radius: 50% !important;
+		outline: none;
+		position: relative;
+		background-image: url('img/icons/left.png') !important;
+		background-size: cover;
+		transform: rotate(0deg);
+		transition: 0.5s ease-in-out;
+		opacity: 0.5;
+	}
+	.activitys .owl-carousel.activity .owl-nav button:hover{
+		transform: rotate(360deg);
+		background: #c8234a;
+		opacity: 1;
+	}
+	.activitys .owl-carousel.activity .owl-nav button span{
+		text-align: center;
+		color: gray;
+		font-weight: 700;
+		font-size: 20px;
+		transform: scale(3.0);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%,-50%);
+		transition: 0.5s ease-in-out;
+	}
+	.activitys .owl-nav button:hover span{
+		color: white;
+	}
+	.right +table {
+		width: 100%;
+	}
+	.right table img{
+		width: 100%;
+	}
+	/*tin tuc su kien*/
+	.activitys .owl-carousel.tintucsukien{
+		width: 100%;
+	}
+	.activitys .owl-carousel.tintucsukien figure {
+		display: flex;
+	}
+	.activitys .owl-carousel.tintucsukien figure img{
+		width: 8em;
+		height: 8em;
+		margin-right: 1em;
+	}
+	.activitys .owl-carousel.tintucsukien figure p{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp:5;
+		-webkit-box-orient:vertical;
+	}
+	.activitys .owl-carousel.tintucsukien button{
+		border: none;
+		outline: none;
+	}
+	.activitys .owl-carousel.tintucsukien span{
+		background: #bbecff;
+	}
+	.activitys .owl-carousel.tintucsukien button:hover span{
+		background: #1c99d9;
+	}
+	.activitys .owl-carousel.tintucsukien button.active span{
+		background: #1c99d9;
+	}
+	.right{
+		margin-top:0.5em; 
+		padding: 1em 0;
+		background: #d5d5d5;
+	}
+	 .right .visitlink img{
+		width: 100%;
+		transition: 0.5s;
+	}
+	.right .visitlink .img2{
+		display: flex;
+	}
+	.right .visitlink .img2 a{
+		padding: 0;
+	}
+	.right .visitlink img:hover{
+		filter: brightness(150%);
+	}
+	.right .visitlink  .forum ~div {
+		height: 0;
+		overflow: hidden;
+		position: absolute;
+		width: 100%;
+		background: white;
+		z-index: 1;
+		opacity: 1;
+	}
+	.right .visitlink  .forum ~div ul{
+		padding: 0;
+	}
+	.right .visitlink  .forum ~div li{
+		list-style-type: none;
+		display: block;
+		margin-top: 0.5em;
+	}
+	.right .visitlink  .forum:hover ~div,.right .visitlink  .forum ~div:hover{
+
+		padding: 0.5em;
+		transition: 0.5s;
+
+		height: 9em;
+
+	}
+	.right .visitlink .img2  img{
+		width: 100%;
+	}
